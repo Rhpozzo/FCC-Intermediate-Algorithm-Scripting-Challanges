@@ -1,3 +1,3 @@
-FreeCodeCamp Algorithm Scripting Challanges.
+FreeCodeCamp Algorithm Scripting Challenges.
 
-My Soluctions to the challanges on FCC for the Intermediate Algorithn Challanges.
+My Soluctions to the challanges on FCC for the Intermediate Algorithn Challenges.
