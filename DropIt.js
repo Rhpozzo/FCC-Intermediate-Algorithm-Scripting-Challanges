@@ -5,14 +5,14 @@
  * Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.
 */
 function dropElements(arr, func){
-    let a = [];
-    for(let i = 0; i < arr.length; i++){
+    let a = []; //array to compare and have result.
+    for(let i = 0; i < arr.length; i++){ //loop will go over each element and push it to a.
         a.push(arr[i]);
-         if(func(a[0]) == false){
-                a.pop();
+         if(func(a[0]) == false){ //if statement will use the loop to compare if the func argument passes the return statement .
+                a.pop();//it will check 0 index for true, if it is false it will remove it until condition is true. Once true iteration will stop.
             }
         }
-    return a;
+    return a; //return answer.
 }
 
 console.log(  dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;})    )
