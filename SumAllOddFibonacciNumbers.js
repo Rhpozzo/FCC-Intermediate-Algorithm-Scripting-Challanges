@@ -1,18 +1,16 @@
 function sumFibs(num) {
-    let a = 0;
-    let b = 1
-    let c;
-    let sumOdds = 0;
-    for(let i = 0; i <= num; i++){
-      c = a + b;
-      a = b;
-      b = c;
-      if(c % 2 !== 0 && c <= num){
-        sumOdds = c + sumOdds;
-        console.log(sumOdds)
-      }
+  let prevNumber = 0;
+  let currNumber = 1;
+  let result = 0;
+
+  while(currNumber <= num){
+    if(currNumber % 2 !== 0){
+      result += currNumber;
     }
-    return sumOdds + 1
+    currNumber += prevNumber;
+    prevNumber = currNumber - prevNumber;
   }
 
-  console.log(sumFibs(3));
+  return result;
+}
+  console.log(sumFibs(5));
