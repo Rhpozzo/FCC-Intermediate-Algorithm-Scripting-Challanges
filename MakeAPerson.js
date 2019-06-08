@@ -30,7 +30,7 @@ var Person = function(firstAndLast) {
          let setFN = z.split(" ")// will take in str and split it into two elements in an array.
          fullName[0] = setFN[0]//  index 0 corresponds to first name change the old one and set the new.
          fullName[1] = setFN[1]//index 1 corresponds t0 the last name, change the old one and set the new.
-         return fullName.join(' ')// join the array soy it is one element.
+         return fullName.join(' ')// join the array so it is one element.
      }
    };
 
