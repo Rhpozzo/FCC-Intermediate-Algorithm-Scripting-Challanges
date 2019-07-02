@@ -10,9 +10,8 @@
 
 function truthCheck(collection, pre){
     let result = []; //create a variable to push what ever is true from the for loop.
-    for(let i = 0; i < collection.length; i++){// loop to find true and false values.
+    for(let i = 0; i < collection.length; i++){// loop thru the object to find true and false values.
         let obj = collection[i];
-        console.log(obj.hasOwnProperty(pre) && Boolean(obj[pre]))// if it's true, push it to results.
         if(obj.hasOwnProperty(pre) && Boolean(obj[pre]) ){// checks if boolean is true;
                 result.push(i); // true? pushed to results, false? leaves it out.
         }
